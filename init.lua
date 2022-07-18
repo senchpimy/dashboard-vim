@@ -437,16 +437,15 @@ dashboard[22]={
 }
 
 math.randomseed(os.time())
+files={"1.gif"}
+file =files[math.random(#files)]
 db.default_banner = dashboard[ math.random(#dashboard) ]
 db.custom_header = nil 
-db.custom_footer = {"fdg","gdfg"}
-db.custom_center = {      {icon = '  ',
-      desc = 'Recently latest session                  ',
-      shortcut = 'SPC s l',
-      action ='SessionLoad'},
+db.custom_footer = nil 
+db.custom_center = { 
       {icon = '  ',
       desc = 'Recently opened files                   ',
-      action =  'DashboardFindHistory',
+      action =  'Telescope oldfiles',
       shortcut = 'SPC f h'},
       {icon = '  ',
       desc = 'Find  File                              ',
@@ -461,12 +460,12 @@ db.custom_center = {      {icon = '  ',
       action = 'Telescope live_grep',
       shortcut = 'SPC f w'},
     }
-db.preview_file_height = 23
+db.preview_file_height = 18
 db.preview_file_width = 28
 db.preview_command = 'chafa -c 256 --fg-only --symbols braille'
-db.preview_file_path ='~/Desktop/LAINHADN3.gif'
+db.preview_file_path ='~/.config/nvim/' .. file
 
-db.hide_statusline = true
+db.hide_statusline = false
 db.hide_tabline = true
 db.session_directory = ''
 
