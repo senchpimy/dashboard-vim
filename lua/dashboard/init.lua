@@ -463,7 +463,7 @@ db.custom_center = {
 db.preview_file_height = 25
 db.preview_file_width = 30
 db.preview_command = 'chafa -c 256 --fg-only --symbols braille'
-db.preview_file_path ='~/.config/nvim/' .. file
+db.preview_file_path ='~/.config/nvim/autoload/plugged/dashboard-vim/' .. file
 
 db.hide_statusline = false
 db.hide_tabline = true
