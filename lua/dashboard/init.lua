@@ -460,7 +460,7 @@ db.custom_center = {
       action = 'Telescope live_grep',
       shortcut = 'SPC f w'},
     }
-db.preview_file_height = 25
+db.preview_file_height = 20
 db.preview_file_width = 30
 db.preview_command = 'chafa -c 256 --fg-only --symbols braille'
 db.preview_file_path ='~/.config/nvim/autoload/plugged/dashboard-vim/' .. file
